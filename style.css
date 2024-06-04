@@ -1,0 +1,91 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #ff9b9b
+}
+
+.seymour-one-regular {
+  font-family: "Seymour One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald-x {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Seymour One", sans-serif;
+	text-align: center;
+	font-size: 1em; 
+	text-transform: uppercase; 
+	letter-spacing: .5em; 
+	color: black;
+}
+
+.nav ul li {
+	display: inline-block;
+}
+
+iframe {
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+footer {
+	text-align: center;
+}
+
+containerl {
+	align-items: left;
+}
+
+.seymour-one-regular {
+  font-family: "Seymour One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+	width: 100%;
+	min-height: 10vh;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: top;
+}
+
+.text span {
+	font-size: 60px;
+	padding: 0 10px;
+  font-family: "Oswald", sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	animation: invert 1s linear infinite;
+	animation-delay: calc(200ms * var(--i));
+}
+
+@keyframes invert {
+	0%,
+	100% {
+		color: #000000;
+		filter: blur(1px);
+		text-shadow: 0 0 10px #006464, 0 0 20px #006464, 0 0 30px #006464,
+		0 0 40px #006464, 0 0 60px #006464, 0 0 80px #006464, 0 0 100px #006464,
+		0 0 120px #006464;
+	}
+	5%,
+	95% {
+		filter: blur(0);
+		color: #fff;
+		text-shadow: none;
+	}
+}
